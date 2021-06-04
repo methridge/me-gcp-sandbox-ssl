@@ -44,10 +44,10 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_admin-email"></a> [admin-email](#input\_admin-email) | Email for Let's Encrypt registration | `any` | n/a | yes |
-| <a name="input_project"></a> [project](#input\_project) | GCP Project name | `any` | n/a | yes |
-| <a name="input_regions"></a> [regions](#input\_regions) | n/a | `set(string)` | n/a | yes |
-| <a name="input_zone-name"></a> [zone-name](#input\_zone-name) | Your public DNS Zone | `any` | n/a | yes |
+| <a name="input_admin-email"></a> [admin-email](#input\_admin-email) | Email for Let's Encrypt registration | `string` | n/a | yes |
+| <a name="input_project"></a> [project](#input\_project) | GCP Project name | `string` | n/a | yes |
+| <a name="input_regions"></a> [regions](#input\_regions) | String set of region names | `set(string)` | n/a | yes |
+| <a name="input_zone-name"></a> [zone-name](#input\_zone-name) | Your public DNS Zone | `string` | n/a | yes |
 
 ## Outputs
 

@@ -1,4 +1,5 @@
 output "regional-tls-certs" {
-  sensitive = true
-  value     = acme_certificate.tls[*]
+  description = "Set of Regional SSL Cert objects"
+  sensitive   = true
+  value       = acme_certificate.tls[*]
 }

@@ -53,5 +53,5 @@ No modules.
 
 | Name | Description |
 |------|-------------|
-| <a name="output_regional-tls-certs"></a> [regional-tls-certs](#output\_regional-tls-certs) | n/a |
+| <a name="output_regional-tls-certs"></a> [regional-tls-certs](#output\_regional-tls-certs) | Set of Regional SSL Cert objects |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->

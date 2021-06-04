@@ -6,13 +6,13 @@ resource "tls_private_key" "acme" {
 resource "acme_registration" "tls" {
   for_each        = var.regions
   account_key_pem = tls_private_key.acme[each.value].private_key_pem
-  email_address   = var.admin_email
+  email_address   = var.admin-email
 }
 
 resource "acme_certificate" "tls" {
   for_each        = var.regions
   account_key_pem = acme_registration.tls[each.value].account_key_pem
-  common_name     = "*.${each.value}.${var.zone_name}"
+  common_name     = "*.${each.value}.${var.zone-name}"
 
   dns_challenge {
     provider = "gcloud"

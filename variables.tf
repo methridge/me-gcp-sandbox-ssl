@@ -1,4 +1,4 @@
-variable "admin_email" {
+variable "admin-email" {
   description = "Email for Let's Encrypt registration"
 }
 
@@ -6,7 +6,7 @@ variable "project" {
   description = "GCP Project name"
 }
 
-variable "zone_name" {
+variable "zone-name" {
   description = "Your public DNS Zone"
 }
 

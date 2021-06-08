@@ -20,4 +20,8 @@ resource "acme_certificate" "tls" {
       GCE_PROJECT = var.project
     }
   }
+
+  lifecycle {
+    create_before_destroy = true
+  }
 }
